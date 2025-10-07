@@ -105,7 +105,9 @@ main().then(()=>{
 //     res.send("success");
 // })
 
-
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 app.all(/.*/,(req,res,next)=>{
     next(new ExpressError(404,"page not found"));
 });
