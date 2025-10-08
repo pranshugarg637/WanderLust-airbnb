@@ -89,7 +89,7 @@ body{
 }
 #filters{
     display:flex;
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
     /* justify-content: center; */
     align-items:center;
 }
@@ -131,3 +131,8 @@ body{
     margin-right: 0.4rem;
 }
 
+@media (max-width:992px){
+    .navbar-collapse{
+        background-color: white !important;
+    }
+}
